@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terminal Coder</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="mainLogo">
+          <img src="/img/WorkCoder.svg" alt="Logo" class="logosvg" />
+        </div>
+        <div class="containerSolar">
+          <div class="sun">
+            <img src="./img/sun.png" alt="sun" />
+          </div>
+          <div class="mercury"></div>
+          <div class="venus"></div>
+          <div class="earth">
+            <div class="moon"></div>
+          </div>
+          <div class="mars"></div>
+          <div class="jupiter"></div>
+          <div class="saturn"></div>
+          <div class="uranus"></div>
+          <div class="neptune"></div>
+          <div class="pluto"></div>
+        </div>
+        <div class="time">
+          <div class="textTime">Time</div>
+          <div class="currentTime">
+            <div id="text">
+              <span id="hours">12</span>
+              <div class="labels">hours</div>
+            </div>
+            <div>
+              <img src="/img/4.svg" alt="star" class="starsvg" />
+            </div>
+            <div id="text">
+              <span id="minutes">00</span>
+              <div class="labels">mins</div>
+            </div>
+            <div>
+              <img src="/img/4.svg" alt="star" class="starsvg" />
+            </div>
+            <div id="text">
+              <span id="seconds">00</span>
+              <div class="labels">secs</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="terminal" id="terminalbody">
+        <div id="bar">WebShell.x64_x86</div>
+        <div id="bar1"></div>
+        <div id="bar2"></div>
+        <div id="bar3"></div>
+        <pre id="shell">
+            ███████╗██╗  ██╗███████╗██╗     ██╗
+            ██╔════╝██║  ██║██╔════╝██║     ██║
+            ███████╗███████║█████╗  ██║     ██║
+            ╚════██║██╔══██║██╔══╝  ██║     ██║
+            ███████║██║  ██║███████╗███████╗███████╗
+            ╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝ v2.8.1
+            Check out my, <a href="https://www.youtube.com/@WorkCoder"><img src="img/youtube-logo-youtube-logo-transparent-youtube-icon-transparent-free-free-png.webp
+                " alt="">Youtube</a>, <a href="https://dribbble.com/WorkCoder"><img src="img/dribbble-icon-1-logo-png-transparent.png" alt="">Dribble</a> and <a href="https://github.com/orkCoder"><img src="img/GitHub-Icon-White-Dark-Background-Logo.wine.png" alt="" id="github" class="github">Github</a>
+            
+            Type 'help' to see list of avaliable commands.
+            </pre>
+        <div id="input-output">
+          <div class="input-container">
+            <span>$</span>
+            <input
+              type="text"
+              class="command-input"
+              id="commandinput"
+              autofocus
+              value=""
+              autocomplete="off"
+            />
+          </div>
+
+          <div id="output">
+            <div id="output-container"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
