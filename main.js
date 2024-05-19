@@ -40,6 +40,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
       delayList(0);
     },
+    error: function () {
+      const mistake = 'This is not a usable command and therefore gives an ERROR'
+
+      output.innerHTML += `<br> ${mistake}`;
+    }
   };
 
   function newInput() {
@@ -63,6 +68,8 @@ document.addEventListener("DOMContentLoaded", function () {
         console.warn("Help has been said");
 
         allCommands.help();
+      } else {
+        allCommands.error()
       }
 
       input.disabled = true;
